@@ -1,0 +1,7 @@
+
+<h1>Blog Posts</h1>
+<ul>
+    {% for blogpost in blogposts %}
+        <li>{{ blogpost.title }} - {{ blogpost.author }} - {{ blogpost.date }}</li>
+    {% endfor %}
+</ul>

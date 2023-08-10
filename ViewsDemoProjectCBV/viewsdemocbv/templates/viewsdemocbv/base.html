@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}ViewsDemo{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'fbv_greet' %}">ViewsDemo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'fbv_greet' %}">FBV Greet</a></li>
+                <li><a href="{% url 'cbv_greet' %}">CBV Greet</a></li>
+                <li><a href="{% url 'blogpost_list' %}">Blog Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
